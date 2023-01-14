@@ -4,9 +4,6 @@ const secret = 'test';
 
 const auth = async (req, res, next) => {
   try {
-    console.log(req.headers);
-    console.log(121);
-    console.log(121);
     const token = req.headers.authorization.split(" ")[1];
     const isCustomAuth = token.length < 500;
     
